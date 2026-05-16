@@ -1,21 +1,22 @@
 # Mini Quiz Game
 
 ## Project Description
-This project is a console-based General Knowledge Quiz Game developed using the C programming language. The system displays multiple-choice questions, accepts user answers, validates responses, and calculates the final score.
+Mini Quiz Game is a console-based General Knowledge Quiz application developed using the C Programming Language.  
+The program displays multiple-choice questions, accepts user answers, validates responses, and calculates the final score.
 
-Questions are selected randomly without repetition to provide a different quiz experience each time the program runs.
+Questions are selected randomly without repetition, making every quiz session unique and interactive.
 
 ---
 
 ## Features
-- Display general knowledge questions
-- Four multiple-choice options for each question
-- Random question selection
+- General knowledge multiple-choice questions
+- Four options for each question
+- Random question generation
 - No repeated questions
-- Answer validation
-- Final score calculation
-- Performance evaluation based on score
-- Console-based interface
+- User answer validation
+- Automatic score calculation
+- Performance evaluation
+- Console-based interactive interface
 
 ---
 
@@ -25,19 +26,30 @@ Questions are selected randomly without repetition to provide a different quiz e
 - Loops
 - Conditional Statements
 - Random Number Generation
-- File Structure Concepts
 - Standard Input / Output Functions
 
 ---
 
-## How to Run the Project (All Operating Systems)
+## Project Structure
+
+```bash
+Mini-Quiz-Game/
+│── quiz.c
+│── README.md
+│── report.pdf
+```
+
+---
+
+## How to Run the Project
 
 ### Step 1: Open Terminal / Command Prompt
-- Windows: Command Prompt or PowerShell
-- macOS: Terminal
-- Linux: Terminal
+- Windows → Command Prompt / PowerShell
+- macOS → Terminal
+- Linux → Terminal
 
-### Step 2: Navigate to the Project Folder
+### Step 2: Navigate to Project Folder
+
 ```bash
 cd path_to_project_folder
 ```
@@ -49,39 +61,60 @@ cd Desktop/Quiz_Game_Project
 ```
 
 ### Step 3: Compile the Program
+
 ```bash
 gcc quiz.c -o quiz
 ```
 
 ### Step 4: Run the Program
 
-#### On macOS / Linux:
+#### macOS / Linux
+
 ```bash
 ./quiz
 ```
 
-#### On Windows:
+#### Windows
+
 ```bash
 quiz
 ```
 
 ---
 
-## Files in the Project
-- quiz.c – Main source code
-- README.md – Project documentation
-- report.pdf – Project report
+## Working Principle
+1. Initialize quiz questions and answers
+2. Generate random question numbers
+3. Check for repeated questions
+4. Display question and options
+5. Accept user input
+6. Validate the answer
+7. Update score
+8. Display final score and performance
 
 ---
 
-## Notes
-- This project is designed as a first-year academic mini project.
-- Questions appear in random order every time the program runs.
-- The score depends on the number of correct answers given by the user.
+## Files in the Project
+- `quiz.c` – Main source code
+- `README.md` – Project documentation
+- `report.pdf` – Project report
+
+---
+
+## Sample Input
+
+```text
+B
+C
+A
+D
+B
+```
 
 ---
 
 ## Sample Output
+
 ```text
 GENERAL KNOWLEDGE QUIZ GAME
 
@@ -93,9 +126,42 @@ D. Chennai
 
 Your answer: B
 
+Correct Answer!
+
+2. Which planet is known as the Red Planet?
+A. Earth
+B. Venus
+C. Mars
+D. Jupiter
+
+Your answer: C
+
+Correct Answer!
+
 QUIZ COMPLETED
 Your Score: 8 / 10
+
+Excellent Performance
 ```
+
+---
+
+## Future Enhancements
+- Add timer for each question
+- Add different difficulty levels
+- Add category-based quizzes
+- Store scores using file handling
+- Create graphical user interface (GUI)
+- Add multiplayer mode
+- Add login and user profiles
+- Add lifelines and hints
+- Maintain leaderboard system
+- Add sound effects and animations
+
+---
+
+## About
+The Mini Quiz Game is a console-based application developed in C to test general knowledge. It displays random questions, accepts user answers, calculates scores, and avoids question repetition. This project demonstrates arrays, loops, conditions, and random number generation.
 
 ---
 
@@ -105,8 +171,3 @@ Your Score: 8 / 10
 - 25A31A4332 : SABBATHI PAVANI
 - 25A31A4364 : VANASI GOWTHAM
 - 25A31A4342 : JANAPAREDDY JASWANTH
-
----
-
-## About
-First-year C mini project for general knowledge quiz management using random question generation.
